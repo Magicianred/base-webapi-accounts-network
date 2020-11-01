@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.WebApi", "Magicianred.Accounts.WebApi\Magicianred.Accounts.WebApi.csproj", "{6D0B2AAC-0545-41A3-AFEF-7BA224552123}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.WebApi", "Magicianred.Accounts.WebApi\Magicianred.Accounts.WebApi.csproj", "{6D0B2AAC-0545-41A3-AFEF-7BA224552123}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.Domain", "Magicianred.Accounts.Domain\Magicianred.Accounts.Domain.csproj", "{09836B44-BD2A-44A0-8B13-BA1F5082F027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.Domain", "Magicianred.Accounts.Domain\Magicianred.Accounts.Domain.csproj", "{09836B44-BD2A-44A0-8B13-BA1F5082F027}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{D1B9189A-3EB5-4D1A-A768-86E0B3F78136}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5E6C539-7E07-4394-9946-CACF96E46443}"
 	ProjectSection(SolutionItems) = preProject
-		..\idea.drawio = ..\idea.drawio
-		..\LICENSE = ..\LICENSE
-		..\README.md = ..\README.md
+		idea.drawio = idea.drawio
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dapper", "Dapper", "{AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}"
@@ -22,13 +22,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF", "EF", "{9713E780-8D80-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MsSql", "MsSql", "{C0196C63-761D-4F5E-8124-B441D22153FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper", "Magicianred.Accounts.DAL.Dapper\Magicianred.Accounts.DAL.Dapper.csproj", "{90376ED0-3B82-414F-85D9-5C4965159710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.Dapper", "Magicianred.Accounts.DAL.Dapper\Magicianred.Accounts.DAL.Dapper.csproj", "{90376ED0-3B82-414F-85D9-5C4965159710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper.MsSql", "DAL.Dapper.MsSql\Magicianred.Accounts.DAL.Dapper.MsSql.csproj", "{8838FDFB-1510-4625-9B65-808983E25EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.Dapper.MsSql", "DAL.Dapper.MsSql\Magicianred.Accounts.DAL.Dapper.MsSql.csproj", "{8838FDFB-1510-4625-9B65-808983E25EEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper.MySql", "DAL.Dapper.MySql\Magicianred.Accounts.DAL.Dapper.MySql.csproj", "{F76E71FC-05CE-497D-B9C6-F7F74379EA70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.Dapper.MySql", "DAL.Dapper.MySql\Magicianred.Accounts.DAL.Dapper.MySql.csproj", "{F76E71FC-05CE-497D-B9C6-F7F74379EA70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.EF.MsSql", "Magicianred.Accounts.DAL.EF.MsSql\Magicianred.Accounts.DAL.EF.MsSql.csproj", "{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.EF.MsSql", "Magicianred.Accounts.DAL.EF.MsSql\Magicianred.Accounts.DAL.EF.MsSql.csproj", "{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

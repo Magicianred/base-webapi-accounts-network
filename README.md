@@ -4,6 +4,11 @@ A webapi with a basic framework who manage accounts and handler generic entities
 ## Credits  
 I have used the repository https://github.com/evgomes/jwt-api for the token system.  
 
+## The idea behind the project  
+![Diagram](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/idea.png)  
+[drawio](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/idea.drawio)  
+[png](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/idea.png)  
+
 ## To Try Application
 1. Use default settings (database inMemory and some data examples)  
 ```json

@@ -102,3 +102,21 @@ dist
 
 # TernJS port file
 .tern-port
+/Magicianred.Accounts.WebApi/.vs/Magicianred.Accounts.WebApi/v16
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.Domain/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.Domain/obj
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.WebApi/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.WebApi/obj/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.WebApi/appsettings.Development.json
+/Magicianred.Accounts.WebApi/.vs/Magicianred.Accounts.WebApi/config
+/Magicianred.Accounts.WebApi/DAL.Dapper.MsSql/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/DAL.Dapper.MsSql/obj
+/Magicianred.Accounts.WebApi/DAL.Dapper.MySql/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/DAL.Dapper.MySql/obj
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.DAL.Dapper/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.DAL.Dapper/obj
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.DAL.EF.MsSql/bin/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.DAL.EF.MsSql/obj/Debug/netcoreapp3.1
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.DAL.EF.MsSql/obj
+/Magicianred.Accounts.WebApi/Magicianred.Accounts.WebApi/obj
+/Magicianred.Accounts.WebApi/DAL.Dapper.MsSql/Magicianred.Accounts.DAL.Dapper.MsSql.csproj.user

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.WebApi", "Magicianred.Accounts.WebApi\Magicianred.Accounts.WebApi.csproj", "{6D0B2AAC-0545-41A3-AFEF-7BA224552123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.Domain", "Magicianred.Accounts.Domain\Magicianred.Accounts.Domain.csproj", "{09836B44-BD2A-44A0-8B13-BA1F5082F027}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{D1B9189A-3EB5-4D1A-A768-86E0B3F78136}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E5E6C539-7E07-4394-9946-CACF96E46443}"
+	ProjectSection(SolutionItems) = preProject
+		..\idea.drawio = ..\idea.drawio
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dapper", "Dapper", "{AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF", "EF", "{9713E780-8D80-439A-B32B-F3638348DCDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MsSql", "MsSql", "{C0196C63-761D-4F5E-8124-B441D22153FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper", "Magicianred.Accounts.DAL.Dapper\Magicianred.Accounts.DAL.Dapper.csproj", "{90376ED0-3B82-414F-85D9-5C4965159710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper.MsSql", "DAL.Dapper.MsSql\Magicianred.Accounts.DAL.Dapper.MsSql.csproj", "{8838FDFB-1510-4625-9B65-808983E25EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.Dapper.MySql", "DAL.Dapper.MySql\Magicianred.Accounts.DAL.Dapper.MySql.csproj", "{F76E71FC-05CE-497D-B9C6-F7F74379EA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicianred.Accounts.DAL.EF.MsSql", "Magicianred.Accounts.DAL.EF.MsSql\Magicianred.Accounts.DAL.EF.MsSql.csproj", "{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D0B2AAC-0545-41A3-AFEF-7BA224552123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0B2AAC-0545-41A3-AFEF-7BA224552123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0B2AAC-0545-41A3-AFEF-7BA224552123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0B2AAC-0545-41A3-AFEF-7BA224552123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09836B44-BD2A-44A0-8B13-BA1F5082F027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09836B44-BD2A-44A0-8B13-BA1F5082F027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09836B44-BD2A-44A0-8B13-BA1F5082F027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09836B44-BD2A-44A0-8B13-BA1F5082F027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90376ED0-3B82-414F-85D9-5C4965159710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90376ED0-3B82-414F-85D9-5C4965159710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90376ED0-3B82-414F-85D9-5C4965159710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90376ED0-3B82-414F-85D9-5C4965159710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8838FDFB-1510-4625-9B65-808983E25EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8838FDFB-1510-4625-9B65-808983E25EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8838FDFB-1510-4625-9B65-808983E25EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8838FDFB-1510-4625-9B65-808983E25EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76E71FC-05CE-497D-B9C6-F7F74379EA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76E71FC-05CE-497D-B9C6-F7F74379EA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76E71FC-05CE-497D-B9C6-F7F74379EA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76E71FC-05CE-497D-B9C6-F7F74379EA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D} = {D1B9189A-3EB5-4D1A-A768-86E0B3F78136}
+		{9713E780-8D80-439A-B32B-F3638348DCDD} = {D1B9189A-3EB5-4D1A-A768-86E0B3F78136}
+		{C0196C63-761D-4F5E-8124-B441D22153FA} = {9713E780-8D80-439A-B32B-F3638348DCDD}
+		{90376ED0-3B82-414F-85D9-5C4965159710} = {AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}
+		{8838FDFB-1510-4625-9B65-808983E25EEE} = {AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}
+		{F76E71FC-05CE-497D-B9C6-F7F74379EA70} = {AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}
+		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3} = {C0196C63-761D-4F5E-8124-B441D22153FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {521F1281-F1F8-4D94-95F2-C398242F4463}
+	EndGlobalSection
+EndGlobal

@@ -9,6 +9,11 @@ I have used the repository https://github.com/evgomes/jwt-api for the token syst
 [drawio](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/idea.drawio)  
 [png](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/idea.png)  
 
+## Entities of the project  
+![Diagram](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/entities.png)  
+[drawio](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/entities.drawio)  
+[png](https://github.com/Magicianred/base-webapi-accounts-network/blob/develop/Project/Diagrams/entities.png)  
+
 ## To Try Application
 1. Use default settings (database inMemory and some data examples)  
 ```json

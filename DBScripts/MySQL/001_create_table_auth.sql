@@ -1,7 +1,7 @@
 
 -- TO DO - SE E' PRESENTE LO SCRIPT - STOP EXECUTION
 INSERT INTO `DbScriptMigration` (`MigrationId`, `MigrationName`, `MigrationDate`)
-SELECT * FROM (SELECT UUID(),'001_create_posts_table',NOW()) AS tmp
+SELECT * FROM (SELECT UUID(),'001_create_table_auth',NOW()) AS tmp
 WHERE NOT EXISTS (
     SELECT `MigrationName` FROM `DbScriptMigration` WHERE `MigrationName` = '001_create_table_auth'
 ) LIMIT 1;

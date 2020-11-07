@@ -52,7 +52,7 @@ namespace Magicianred.Accounts.DAL.Dapper.Data
             }
 
             var accountList = new List<IAccount>();
-            var accountsResult = accountRepository.GetAll().Result;
+            var accountsResult = accountRepository.GetAllAsync().Result;
             if (accountsResult != null)
             {
                 accountList = accountsResult.ToList();
@@ -75,7 +75,7 @@ namespace Magicianred.Accounts.DAL.Dapper.Data
 
                 foreach (var account in accounts)
                 {
-                    accountRepository.AddAsync(account).Wait();
+                    accountRepository.CreateAsync(account, EntityTypesEnum.USER).Wait();
                 }
             }
 

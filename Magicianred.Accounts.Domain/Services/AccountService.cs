@@ -1,4 +1,5 @@
-﻿using Magicianred.Accounts.Domain.Interfaces;
+﻿using Magicianred.Accounts.Domain.Enums;
+using Magicianred.Accounts.Domain.Interfaces;
 using Magicianred.Accounts.Domain.Interfaces.Handlers;
 using Magicianred.Accounts.Domain.Interfaces.Models;
 using Magicianred.Accounts.Domain.Interfaces.Repositories;
@@ -36,7 +37,7 @@ namespace Magicianred.Accounts.Domain.Services
 
             account.Password = _passwordHandler.HashPassword(account.Password);
 
-            await _accountRepository.AddAsync(account); //, accountRoles);
+            await _accountRepository.CreateAsync(account, EntityTypesEnum.USER);
             await _accountRoleRepository.AddAsync(account, accountRoles);
             await _unitOfWork.CompleteAsync();
 

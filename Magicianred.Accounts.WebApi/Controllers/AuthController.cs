@@ -76,36 +76,36 @@ namespace Magicianred.Accounts.WebApi.Controllers
         }
 
 
-        [Route("/api/token/refresh")]
-        [HttpPost]
-        public async Task<IActionResult> RefreshTokenAsync([FromBody] RefreshTokenResource refreshTokenResource)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[Route("/api/token/refresh")]
+        //[HttpPost]
+        //public async Task<IActionResult> RefreshTokenAsync([FromBody] RefreshTokenResource refreshTokenResource)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            var response = await _authenticationService.RefreshTokenAsync(refreshTokenResource.Token, refreshTokenResource.UserEmail);
-            if (!response.Success)
-            {
-                return BadRequest(response.Message);
-            }
+        //    var response = await _authenticationService.RefreshTokenAsync(refreshTokenResource.Token, refreshTokenResource.UserEmail);
+        //    if (!response.Success)
+        //    {
+        //        return BadRequest(response.Message);
+        //    }
 
-            var tokenResource = response.Token.ToResourceAccessToken();
-            return Ok(tokenResource);
-        }
+        //    var tokenResource = response.Token.ToResourceAccessToken();
+        //    return Ok(tokenResource);
+        //}
 
-        [Route("/api/token/revoke")]
-        [HttpPost]
-        public IActionResult RevokeToken([FromBody] RevokeTokenResource revokeTokenResource)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[Route("/api/token/revoke")]
+        //[HttpPost]
+        //public IActionResult RevokeToken([FromBody] RevokeTokenResource revokeTokenResource)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            _authenticationService.RevokeRefreshToken(revokeTokenResource.Token);
-            return NoContent();
-        }
+        //    _authenticationService.RevokeRefreshToken(revokeTokenResource.Token);
+        //    return NoContent();
+        //}
     }
 }

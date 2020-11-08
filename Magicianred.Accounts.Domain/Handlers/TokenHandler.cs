@@ -1,5 +1,6 @@
 ﻿using Magicianred.Accounts.Domain.Interfaces.Handlers;
 using Magicianred.Accounts.Domain.Interfaces.Models;
+using Magicianred.Accounts.Domain.Models;
 using Magicianred.Accounts.Domain.Models.Security;
 using Microsoft.Extensions.Options;
 using System;
@@ -87,7 +88,9 @@ namespace Magicianred.Accounts.Domain.Handlers
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(JwtRegisteredClaimNames.Sub, account.Email)
+                new Claim(JwtRegisteredClaimNames.Typ, "JWT"),
+                new Claim(JwtRegisteredClaimNames.Sub, "AccountId-"+account.Id),
+                new Claim(JwtRegisteredClaimNames.UniqueName, "UserId"+account.User.Id)
             };
 
             foreach (var userRole in account.AccountRoles)
@@ -96,6 +99,13 @@ namespace Magicianred.Accounts.Domain.Handlers
             }
 
             return claims;
+        }
+
+        internal enum TokenTypes : byte
+        {
+            Invalid,
+            Access,
+            Refresh
         }
     }
 }

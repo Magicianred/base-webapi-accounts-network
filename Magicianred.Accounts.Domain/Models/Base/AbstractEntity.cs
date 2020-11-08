@@ -1,6 +1,7 @@
 ﻿using Magicianred.Accounts.Domain.Interfaces.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Magicianred.Accounts.Domain.Models.Base
@@ -9,6 +10,8 @@ namespace Magicianred.Accounts.Domain.Models.Base
     {
         public int Id { get; set; }
         public int TypeId { get; set; }
+        [NotMapped]
+        public IEntityType Type { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Properties { get; set; }

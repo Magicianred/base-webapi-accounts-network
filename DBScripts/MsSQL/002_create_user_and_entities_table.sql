@@ -30,9 +30,12 @@ CREATE TABLE [dbo].[Users](
 	[Username] [nvarchar](50) NOT NULL,
 	[Name] [nvarchar](100) NULL,
 	[Surname] [nvarchar](100) NULL,
+	[TypeId] [int] NOT NULL,
+	[Title] [nvarchar](100) NOT NULL,
+	[Description] [nvarchar](250) NULL,
 	[Properties] [nvarchar](2000) NULL,
 	[CreateDate] [datetime] NOT NULL,
-	[LastAccess] [datetime] NOT NULL,
+	[LastAccess] [datetime] NULL,
  CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

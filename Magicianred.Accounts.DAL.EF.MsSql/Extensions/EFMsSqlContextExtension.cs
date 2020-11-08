@@ -21,6 +21,7 @@ namespace Magicianred.Accounts.DAL.EF.MsSql.Extensions
             }
             // services.AddScoped<IAccountRepository>(_ => new AccountRepository(new AppDbContext(null)));
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IAccountRoleRepository, AccountRoleRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();

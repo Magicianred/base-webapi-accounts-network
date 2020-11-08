@@ -26,11 +26,15 @@ namespace Magicianred.Accounts.WebApi.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                //ClaimsIdentity identity = User.Identity as ClaimsIdentity;
-                //if (identity != null)
-                //{
-                //    IEnumerable<Claim> claims = identity.Claims;
-                //}
+                ClaimsIdentity identity = User.Identity as ClaimsIdentity;
+                if (identity != null)
+                {
+                    IEnumerable<Claim> claims = identity.Claims;
+                    foreach (Claim c in claims)
+                    {
+                        Console.WriteLine(c.Type + " = " + c.Value);
+                    }
+                }
                 return "Valid";
             }
             else

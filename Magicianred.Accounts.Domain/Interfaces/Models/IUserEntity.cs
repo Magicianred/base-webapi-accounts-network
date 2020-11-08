@@ -10,5 +10,7 @@ namespace Magicianred.Accounts.Domain.Interfaces.Models
         int EntityId { get; set; }
         bool IsOwner { get; set; }
         DateTime CreateDate { get; set; }
+        IEntity Entity { get; set; }
+        IUser User { get; set; }
     }
 }

@@ -13,16 +13,23 @@ namespace Magicianred.Accounts.Domain.Services
     public class AccountService : IAccountService
     {
         private readonly IAccountRepository _accountRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IRoleRepository _roleRepository;
         private readonly IAccountRoleRepository _accountRoleRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPasswordHandler _passwordHandler;
 
-        public AccountService(IAccountRepository accountRepository, IRoleRepository roleRepository, IAccountRoleRepository accountRoleRepository, IUnitOfWork unitOfWork, IPasswordHandler passwordHandler)
+        public AccountService(IAccountRepository accountRepository,
+                                IUserRepository userRepository,
+                                IRoleRepository roleRepository, 
+                                IAccountRoleRepository accountRoleRepository, 
+                                IUnitOfWork unitOfWork, 
+                                IPasswordHandler passwordHandler)
         {
             _passwordHandler = passwordHandler;
             _unitOfWork = unitOfWork;
             _accountRepository = accountRepository;
+            _userRepository = userRepository;
             _roleRepository = roleRepository;
             _accountRoleRepository = accountRoleRepository;
         }
@@ -47,18 +54,22 @@ namespace Magicianred.Accounts.Domain.Services
         public async Task<IAccount> FindByEmailAsync(string email)
         {
             var account = await _accountRepository.FindByEmailAsync(email);
-            if (account != null && account.AccountRoles == null)
+            if (account != null)
             {
-                var accountRoles = await _accountRoleRepository.FindByAccountIdAsync(account.Id);
-                account.AccountRoles = accountRoles.ToList();
-                if (account.AccountRoles != null)
+                account.User = await _userRepository.FindByAccountIdAsync(account.Id);
+                if (account.AccountRoles == null || account.AccountRoles.Count() == 0)
                 {
-                    if (account.AccountRoles.Count > 0 && account.AccountRoles[0].Role == null)
-                        foreach (var accountRole in account.AccountRoles)
-                        {
-                            accountRole.Account = account;
-                            accountRole.Role = await _roleRepository.FindByIdAsync(accountRole.RoleId);
-                        }
+                    var accountRoles = await _accountRoleRepository.FindByAccountIdAsync(account.Id);
+                    account.AccountRoles = accountRoles.ToList();
+                    if (account.AccountRoles != null && account.AccountRoles.Count > 0)
+                    {
+                        if (account.AccountRoles[0].Role == null)
+                            foreach (var accountRole in account.AccountRoles)
+                            {
+                                accountRole.Account = account;
+                                accountRole.Role = await _roleRepository.FindByIdAsync(accountRole.RoleId);
+                            }
+                    }
                 }
             }
 

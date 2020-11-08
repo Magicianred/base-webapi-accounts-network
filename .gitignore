@@ -135,3 +135,6 @@ dist
 /Magicianred.Accounts.WebApi/bin/Debug/netcoreapp3.1
 /Magicianred.Accounts.WebApi/obj
 /Magicianred.Accounts.WebApi/appsettings.Development.json
+/MsSql.Context_For_Scaffolding/bin/Debug/netcoreapp3.1
+/MsSql.Context_For_Scaffolding/obj
+/MsSql.Context_For_Scaffolding/CommandLine.md

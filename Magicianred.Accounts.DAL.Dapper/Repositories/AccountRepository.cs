@@ -8,7 +8,7 @@ using Magicianred.Accounts.Domain.Interfaces.Repositories;
 using Magicianred.Accounts.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Dynamic;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -147,7 +147,7 @@ namespace Magicianred.Accounts.DAL.Dapper.Repositories
 
         private (string, object[]) resolveFilter(IAccountFilter filter)
         {
-            List<object> paramsToAdd = new List<object>();
+            dynamic paramsToAdd = new ExpandoObject();
             StringBuilder whereToAdd = new StringBuilder();
             bool hasWhere = false;
 
@@ -156,14 +156,14 @@ namespace Magicianred.Accounts.DAL.Dapper.Repositories
                 if (filter.Id.HasValue)
                 {
                     whereToAdd.Append(" Id = @AccountId ");
-                    paramsToAdd.Add(filter.Id.Value);
+                    paramsToAdd.AccountId = filter.Id.Value;
                     hasWhere = true;
                 }
                 if (!String.IsNullOrEmpty(filter.Email))
                 {
                     if (hasWhere) { whereToAdd.Append(" AND "); }
                     whereToAdd.Append(" Email = @Email ");
-                    paramsToAdd.Add(filter.Email);
+                    paramsToAdd.Email = filter.Email;
                     hasWhere = true;
                 }
             }

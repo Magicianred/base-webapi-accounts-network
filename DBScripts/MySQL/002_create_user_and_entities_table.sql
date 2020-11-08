@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `Users` (
 				`Surname` varchar(100) NULL,
 				`Properties` varchar(2000) NULL,
 				`CreateDate` datetime NOT NULL,
-				`LastAccess` datetime NOT NULL,
+				`LastAccess` datetime NULL,
 			PRIMARY KEY (`Id`)
 			) ENGINE=InnoDB;
 

@@ -8,7 +8,6 @@ using Magicianred.Accounts.Domain.Models;
 using Magicianred.Accounts.Domain.Models.Filters;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,7 +22,7 @@ namespace Magicianred.Accounts.DAL.EF.MsSql.Repositories
             _context = context;
         }
 
-        public Task<IEnumerable<IAccount>> FindAsync(IAccountFilter filter = null, List<IOrderBy> orderBy = null, string includeProperties = null, int? skip = null, int? take = null)
+        public async Task<IEnumerable<IAccount>> FindAsync(IAccountFilter filter = null, List<IOrderBy> orderBy = null, string includeProperties = null, int? skip = null, int? take = null)
         {
             throw new NotImplementedException();
         }

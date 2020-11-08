@@ -12,7 +12,10 @@ namespace Magicianred.Accounts.Domain.Interfaces.Models
         string Password { get; set; }
 
         DateTime CreateDate { get; set; }
+        IUser User { get; set; }
 
         List<IAccountRole> AccountRoles { get; set; }
+
+        List<IUserAccount> UserAccounts { get; set; }
     }
 }

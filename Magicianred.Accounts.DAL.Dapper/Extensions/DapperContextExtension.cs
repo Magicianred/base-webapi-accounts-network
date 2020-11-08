@@ -11,6 +11,7 @@ namespace Magicianred.Accounts.DAL.Dapper.Extensions
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<IAccountRoleRepository, AccountRoleRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }

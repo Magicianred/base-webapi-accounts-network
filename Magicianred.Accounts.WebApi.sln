@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Magicianred.Accounts.DAL.EF.MsSql", "Magicianred.Accounts.DAL.EF.MsSql\Magicianred.Accounts.DAL.EF.MsSql.csproj", "{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{AB300F88-13D6-4C87-ADA5-2DC09A3F799C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsSql.Context_For_Scaffolding", "MsSql.Context_For_Scaffolding\MsSql.Context_For_Scaffolding.csproj", "{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,8 @@ Global
 		{8838FDFB-1510-4625-9B65-808983E25EEE} = {AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}
 		{F76E71FC-05CE-497D-B9C6-F7F74379EA70} = {AEC05A3A-E4F5-44F7-BDC9-8DA470DB883D}
 		{3554F6D8-84FA-47B8-B6B3-BF483A5E92D3} = {C0196C63-761D-4F5E-8124-B441D22153FA}
+		{AB300F88-13D6-4C87-ADA5-2DC09A3F799C} = {C0196C63-761D-4F5E-8124-B441D22153FA}
+		{1378AC0D-1D4C-4A98-87AC-6C0DC868DC2A} = {AB300F88-13D6-4C87-ADA5-2DC09A3F799C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {521F1281-F1F8-4D94-95F2-C398242F4463}
